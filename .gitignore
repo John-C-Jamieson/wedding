@@ -1,3 +1,17 @@
+# IDE
+.idea/
+.vscode/
+
+# Node
+node_modules/
+
+#TypeScript
+build/
+.next/
+
+# NPM
+package-lock.json
+
 # Logs
 logs
 *.log
