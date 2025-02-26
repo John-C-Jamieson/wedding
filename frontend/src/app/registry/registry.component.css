@@ -1,0 +1,32 @@
+.registry-container {
+  padding: 20px;
+}
+
+.registry-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registry-container p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registry-container ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.registry-container li {
+  margin-bottom: 10px;
+}
+
+.registry-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.registry-container a:hover {
+  text-decoration: underline;
+}

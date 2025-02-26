@@ -1,0 +1,26 @@
+.menu-container {
+  padding: 20px;
+}
+
+.menu-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-container h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.menu-container section {
+  margin-bottom: 20px;
+}
+
+.menu-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-container li {
+  margin-bottom: 10px;
+}

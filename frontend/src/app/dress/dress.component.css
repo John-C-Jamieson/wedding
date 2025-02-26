@@ -1,0 +1,20 @@
+.dress-code-container {
+  padding: 20px;
+}
+
+.dress-code-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dress-code-container p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dress-code-container ul {
+  list-style: disc;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-left: 20px;
+}

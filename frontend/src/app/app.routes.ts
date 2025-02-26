@@ -1,8 +1,20 @@
 import { Routes } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { LocationComponent } from './location/location.component';
+import { DressComponent } from './dress/dress.component';
+import { MenuComponent } from './menu/menu.component';
+import { RegistryComponent } from './registry/registry.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 export const routes: Routes = [
-  { path: 'navbar-component', component: NavbarComponent },
-  { path: 'footer-component', component: FooterComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'location', component: LocationComponent },
+  { path: 'dress', component: DressComponent },
+  { path: 'menu', component: MenuComponent },
+  { path: 'registry', component: RegistryComponent },
+  { path: 'schedule', component: ScheduleComponent },
+  // Redirect empty path to home
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  // Optionally, handle unknown routes
+  { path: '**', redirectTo: '/home' }
 ];

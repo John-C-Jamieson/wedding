@@ -1,21 +1,5 @@
-<app-navbar />
+<app-navbar></app-navbar>
 
-<div class="wedding-container">
-    <header class="wedding-header">
-        <h1>{{ weddingTitle }}</h1>
-        <p class="wedding-date">{{ weddingDate }}</p>
-    </header>
+<router-outlet></router-outlet>
 
-    <section class="wedding-details">
-        <p class="wedding-location">{{ weddingLocation }}</p>
-        <p class="wedding-description">{{ description }}</p>
-    </section>
-
-    <footer class="wedding-footer">
-        <app-footer />
-    </footer>
-</div>
-
-<router-outlet />
-
-
+<app-footer></app-footer>
