@@ -1,1 +1,156 @@
-/* You can add global styles to this file, and also import other style files */
+/* Define a soft, elegant color palette using CSS variables */
+:root {
+  --primary-color: #a78f8c;   /* A soft rose tone */
+  --secondary-color: #f8f1ef; /* A warm, off-white background */
+  --accent-color: #d6a4a4;    /* A slightly deeper rose for accents */
+  --text-color: #333333;      /* A dark, readable text color */
+  --link-color: #a78f8c;
+  --link-hover-color: #d6a4a4;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* Container to constrain content width */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar styles (similar to your navbar example) */
+nav {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--accent-color);
+}
+
+/* Footer styles (to complement the navbar) */
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.9em;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* Section styling */
+.section {
+  padding: 40px 20px;
+}
+
+/* Forms: Inputs & Textareas */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Horizontal rule for elegant separations */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 40px 0;
+}
+
+/* Responsive Typography Adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+}

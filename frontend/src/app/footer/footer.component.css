@@ -1,11 +1,11 @@
 footer {
-  background-color: #333;
-  padding: 10px 20px;
-  color: #fff;
+  background-color: var(--primary-color);  /* Uses the soft rose tone from global variables */
+  padding: 20px;
   text-align: center;
+  color: var(--secondary-color);  /* Uses the warm off-white for text */
+  font-size: 0.9em;
 }
 
 .footer-text {
   margin-top: 10px;
-  font-size: 0.9em;
 }
