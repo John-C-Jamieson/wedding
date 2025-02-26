@@ -1,0 +1,28 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "John &amp; Rosemary’s Wedding Web Application",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start:frontend": "npm --prefix frontend start",
+    "start:backend": "npm --prefix backend start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/John-C-Jamieson/wedding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/John-C-Jamieson/wedding/issues"
+  },
+  "homepage": "https://github.com/John-C-Jamieson/wedding#readme"
+}
+
