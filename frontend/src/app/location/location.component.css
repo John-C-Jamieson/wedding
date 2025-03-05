@@ -13,13 +13,29 @@
   margin-bottom: 20px;
 }
 
-.map-placeholder {
+.map {
   text-align: center;
   margin-top: 20px;
 }
 
-.map-placeholder img {
+/* Styles for the optional venue image */
+.venue-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.venue-image img {
   max-width: 100%;
   height: auto;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Styles for the additional parking/TTC information */
+.additional-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.additional-info h2 {
+  margin-bottom: 10px;
 }
