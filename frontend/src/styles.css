@@ -1,11 +1,11 @@
 /* Define a soft, elegant color palette using CSS variables */
 :root {
-  --primary-color: #a78f8c;   /* A soft rose tone */
-  --secondary-color: #f8f1ef; /* A warm, off-white background */
-  --accent-color: #d6a4a4;    /* A slightly deeper rose for accents */
-  --text-color: #333333;      /* A dark, readable text color */
-  --link-color: #a78f8c;
-  --link-hover-color: #d6a4a4;
+  --primary-color: #4663AC;   /* Darkest blue from palette */
+  --secondary-color: #F8F1EF; /* Original warm, off‑white background */
+  --accent-color: #C1D8F0;    /* The shade just above the darkest blue */
+  --text-color: #4663AC;      /* Match main text to the darkest blue */
+  --link-color: #4663AC;
+  --link-hover-color: #C1D8F0;
 }
 
 /* Global Styles */
@@ -50,7 +50,7 @@ a:hover {
   padding: 20px;
 }
 
-/* Navbar styles (similar to your navbar example) */
+/* Navbar styles */
 nav {
   background-color: var(--primary-color);
   padding: 10px 20px;
@@ -81,7 +81,7 @@ nav a.active {
   background-color: var(--accent-color);
 }
 
-/* Footer styles (to complement the navbar) */
+/* Footer styles */
 footer {
   background-color: var(--primary-color);
   padding: 20px;
@@ -111,7 +111,7 @@ footer {
   padding: 40px 20px;
 }
 
-/* Forms: Inputs & Textareas */
+/* Forms: Inputs & Text areas */
 input, textarea {
   width: 100%;
   padding: 10px;
