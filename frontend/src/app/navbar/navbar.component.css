@@ -29,4 +29,5 @@ nav {
 .navbar li a:hover,
 .navbar li a.active {
   background-color: var(--accent-color);
+  color: var(--primary-color);
 }

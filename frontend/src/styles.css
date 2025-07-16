@@ -1,7 +1,7 @@
 /* Define a soft, elegant color palette using CSS variables */
 :root {
   --primary-color: #4663AC;   /* Darkest blue from palette */
-  --secondary-color: #F8F1EF; /* Original warm, off‑white background */
+  --secondary-color: #edf2f4; /* off‑white background */
   --accent-color: #C1D8F0;    /* The shade just above the darkest blue */
   --text-color: #4663AC;      /* Match main text to the darkest blue */
   --link-color: #4663AC;
