@@ -1,26 +1,71 @@
+/* MENU PAGE OVERRIDES */
 .menu-container {
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .menu-container h1 {
   text-align: center;
-  margin-bottom: 20px;
-}
-
-.menu-container h2 {
-  margin-top: 20px;
-  color: #333;
+  margin-bottom: 40px;
+  color: var(--primary-color);
 }
 
 .menu-container section {
-  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.menu-container h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  text-align: center;
 }
 
 .menu-container ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .menu-container li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.menu-container li strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.menu-container li em {
+  font-style: normal;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.or-separator {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.or-separator em {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-style: normal;
+  font-size: 0.85rem;
+}
+
+.menu-note {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 20px;
 }
