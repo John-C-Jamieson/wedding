@@ -1,41 +1,107 @@
+/* LOCATION PAGE OVERRIDES */
 .location-container {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
-.location-container h1 {
+.location-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  max-width: 700px;
+  width: 100%;
+  padding: 30px 25px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.location-container address {
+.location-card h1 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+/* Venue Info */
+.venue-info p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.venue-info address {
   font-style: normal;
-  text-align: center;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #555;
 }
 
-.map {
-  text-align: center;
-  margin-top: 20px;
+/* Directions Section */
+.location-card .directions {
+  margin-bottom: 30px;
+  text-align: left;
 }
 
-/* Styles for the optional venue image */
-.venue-image {
+.location-card .directions h2 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  font-size: 1.3rem;
   text-align: center;
-  margin-top: 20px;
 }
 
-.venue-image img {
-  max-width: 100%;
-  height: auto;
+.location-card .directions p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.map iframe {
+  width: 100%;
+  height: 360px;
+  border: none;
   border-radius: 8px;
 }
 
-/* Styles for the additional parking/TTC information */
-.additional-info {
+/* Venue Image */
+.venue-image {
+  margin: 30px 0;
   text-align: center;
-  margin-top: 20px;
+}
+
+.venue-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Additional Info */
+.additional-info {
+  text-align: left;
+  margin-top: 30px;
 }
 
 .additional-info h2 {
   margin-bottom: 10px;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.additional-info p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.additional-info a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.additional-info a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
 }
