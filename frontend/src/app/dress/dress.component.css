@@ -1,20 +1,56 @@
+/* DRESS CODE PAGE OVERRIDES */
 .dress-code-container {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
-.dress-code-container h1 {
+.dress-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  max-width: 640px;
+  padding: 30px 25px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.dress-code-container p {
-  text-align: center;
+.dress-card h1 {
   margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 2rem;
 }
 
-.dress-code-container ul {
-  list-style: disc;
-  max-width: 500px;
-  margin: 0 auto;
-  padding-left: 20px;
+.dress-card .intro {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.dress-section {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.dress-section h2 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+.dress-section p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.dress-card .warning {
+  margin-top: 0;
+  color: #e07a5f;
+  font-style: italic;
+}
+
+.dress-card .closing {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: var(--text-color);
 }
