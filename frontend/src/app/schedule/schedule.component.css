@@ -1,24 +1,51 @@
+/* SCHEDULE PAGE OVERRIDES */
 .schedule-container {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
-.schedule-container h1 {
+.schedule-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  max-width: 500px;
+  width: 100%;
+  padding: 30px 25px;
+}
+
+.schedule-card h1 {
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.schedule-container ul {
-  list-style: none;
-  padding: 0;
+.schedule-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.schedule-container li {
-  margin-bottom: 20px;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+.schedule-item:last-child {
+  border-bottom: none;
 }
 
-.event-desc {
-  font-size: 0.9em;
+.schedule-item .time {
+  flex: 0 0 90px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.schedule-item .activity {
+  flex: 1;
   color: #555;
+  font-size: 1rem;
+}
+
+/* Optional: make times right‑aligned */
+.schedule-item .time {
+  text-align: right;
+  padding-right: 20px;
 }
