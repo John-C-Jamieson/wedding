@@ -1,20 +1,63 @@
+/* HOME PAGE OVERRIDES */
 .home-container {
-  text-align: center;
-  padding: 20px;
+  position: relative;
+  width: 100%;
+  height: 100vh;          /* full viewport height */
+  overflow: hidden;
 }
 
-.home-container h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+/* Inline background image behaving like cover */
+.home-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6); /* darker for contrast */
+  z-index: 0;
 }
 
-.home-container p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+.home-hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
 }
 
-.home-container img {
-  max-width: 100%;
-  height: auto;
+/* Semi‑transparent panel behind text */
+.home-text-panel {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 24px 32px;
   border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Heading & date inside the panel */
+.home-text-panel h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.home-text-panel .home-date {
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  margin-top: 8px;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .home-text-panel h1 {
+    font-size: 2.2rem;
+  }
+  .home-text-panel .home-date {
+    font-size: 1rem;
+  }
 }
